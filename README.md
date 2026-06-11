@@ -92,12 +92,12 @@ Air pollution is a critical global health issue. According to the WHO, **7 milli
 
 ### Libraries Used
 
-streamlit==1.28.0  # Web dashboard
-pandas==2.1.0      # Data processing
-numpy==1.24.3      # Numerical operations
-plotly==5.17.0     # Interactive charts
-altair==5.1.0      # Statistical visualizations
-matplotlib==3.7.2  # Static chart generation
+- streamlit==1.28.0  # Web dashboard
+- pandas==2.1.0      # Data processing
+- numpy==1.24.3      # Numerical operations
+- plotly==5.17.0     # Interactive charts
+- altair==5.1.0      # Statistical visualizations
+- matplotlib==3.7.2  # Static chart generation
 
 ## 📁 Project Structure
 ```
@@ -196,12 +196,13 @@ Console Mode
 - CSV logs saved automatically in data/ folder
 
 ## 📊 AQI Classification
-AQI Range	Category	Color	Health Impact
-0-50	Good	🟢 Green	Air quality is satisfactory
-51-100	Moderate	🟡 Yellow	Acceptable air quality
-101-200	Poor	🟠 Orange	Sensitive groups may be affected
-201-300	Unhealthy	🔴 Red	Health effects for everyone
-301-500	Hazardous	🟣 Purple	Emergency health conditions
+| AQI Range | Category | Color | Health Impact |
+| --------- | -------- | ----- | ------------- |
+| 0-50 | Good | 🟢 Green | Air quality is satisfactory |
+| 51-100 | Moderate | 🟡 Yellow | Acceptable air quality |
+| 101-200 | Poor | 🟠 Orange | Sensitive groups may be affected |
+| 201-300 | Unhealthy | 🔴 Red | Health effects for everyone |
+| 301-500 | Hazardous | 🟣 Purple | Emergency health conditions |
 
 # Alert Levels
 - WARNING - Moderate pollution detected

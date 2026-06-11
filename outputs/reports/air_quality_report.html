@@ -1,0 +1,250 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Air Quality Monitoring Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 40px;
+                background-color: #f5f5f5;
+            }
+            .container {
+                max-width: 1000px;
+                margin: auto;
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            h1 {
+                color: #333;
+                text-align: center;
+                border-bottom: 3px solid #4CAF50;
+                padding-bottom: 10px;
+            }
+            h2 {
+                color: #555;
+                margin-top: 30px;
+            }
+            .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                margin: 20px 0;
+            }
+            .stat-card {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            .stat-card.good { background: linear-gradient(135deg, #4CAF50, #45a049); }
+            .stat-card.moderate { background: linear-gradient(135deg, #FFC107, #FFB300); }
+            .stat-card.poor { background: linear-gradient(135deg, #FF9800, #F57C00); }
+            .stat-card.unhealthy { background: linear-gradient(135deg, #F44336, #D32F2F); }
+            .stat-card.hazardous { background: linear-gradient(135deg, #9C27B0, #7B1FA2); }
+            .stat-number {
+                font-size: 36px;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 12px;
+                text-align: left;
+            }
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+            .footer {
+                text-align: center;
+                margin-top: 40px;
+                padding-top: 20px;
+                border-top: 1px solid #ddd;
+                color: #777;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>🌍 Air Quality Monitoring Report</h1>
+            <p style="text-align: center; color: #666;">Generated on: 2026-06-11 17:53:00</p>
+            
+            <h2>📊 Summary Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div>Average Air Quality</div>
+                    <div class="stat-number">99.2</div>
+                </div>
+                <div class="stat-card">
+                    <div>Max Air Quality</div>
+                    <div class="stat-number">248</div>
+                </div>
+                <div class="stat-card">
+                    <div>Min Air Quality</div>
+                    <div class="stat-number">21</div>
+                </div>
+                <div class="stat-card">
+                    <div>Average Temperature</div>
+                    <div class="stat-number">26.7°C</div>
+                </div>
+                <div class="stat-card">
+                    <div>Average Humidity</div>
+                    <div class="stat-number">52.3%</div>
+                </div>
+                <div class="stat-card">
+                    <div>Total Alerts</div>
+                    <div class="stat-number">10</div>
+                </div>
+            </div>
+            
+            <h2>📈 Air Quality Distribution</h2>
+            <div class="stats-grid">
+                <div class="stat-card good">
+                    <div>Good (0-50)</div>
+                    <div class="stat-number">8</div>
+                    <div>32.0%</div>
+                </div>
+                <div class="stat-card moderate">
+                    <div>Moderate (51-100)</div>
+                    <div class="stat-number">7</div>
+                    <div>28.0%</div>
+                </div>
+                <div class="stat-card poor">
+                    <div>Poor (101-200)</div>
+                    <div class="stat-number">7</div>
+                    <div>28.0%</div>
+                </div>
+                <div class="stat-card unhealthy">
+                    <div>Unhealthy (201-300)</div>
+                    <div class="stat-number">3</div>
+                    <div>12.0%</div>
+                </div>
+                <div class="stat-card hazardous">
+                    <div>Hazardous (300+)</div>
+                    <div class="stat-number">0</div>
+                    <div>0.0%</div>
+                </div>
+            </div>
+            
+            <h2>📋 Sample Data (Last 10 Readings)</h2>
+            <table border="1" class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>timestamp</th>
+      <th>air_quality</th>
+      <th>temperature_c</th>
+      <th>humidity_percent</th>
+      <th>smoke_ppm</th>
+      <th>co2_ppm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-06-11 08:52:55</td>
+      <td>159</td>
+      <td>28.5</td>
+      <td>48.2</td>
+      <td>70</td>
+      <td>574</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 09:52:55</td>
+      <td>129</td>
+      <td>29.2</td>
+      <td>40.2</td>
+      <td>87</td>
+      <td>778</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 10:52:55</td>
+      <td>48</td>
+      <td>21.6</td>
+      <td>50.2</td>
+      <td>23</td>
+      <td>427</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 11:52:55</td>
+      <td>213</td>
+      <td>32.8</td>
+      <td>47.4</td>
+      <td>146</td>
+      <td>1185</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 12:52:55</td>
+      <td>41</td>
+      <td>23.4</td>
+      <td>64.5</td>
+      <td>28</td>
+      <td>494</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 13:52:55</td>
+      <td>76</td>
+      <td>22.4</td>
+      <td>62.3</td>
+      <td>10</td>
+      <td>406</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 14:52:55</td>
+      <td>248</td>
+      <td>37.3</td>
+      <td>46.0</td>
+      <td>184</td>
+      <td>1088</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:52:55</td>
+      <td>21</td>
+      <td>21.9</td>
+      <td>45.6</td>
+      <td>26</td>
+      <td>412</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 16:52:55</td>
+      <td>47</td>
+      <td>27.4</td>
+      <td>59.9</td>
+      <td>15</td>
+      <td>446</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 17:52:55</td>
+      <td>144</td>
+      <td>28.3</td>
+      <td>53.2</td>
+      <td>59</td>
+      <td>667</td>
+    </tr>
+  </tbody>
+</table>
+            
+            <h2>💡 Recommendations</h2>
+            <ul>
+                <li><strong>Good Days:</strong> Enjoy outdoor activities</li>
+                <li><strong>Moderate Days:</strong> Sensitive individuals should limit prolonged outdoor exertion</li>
+                <li><strong>Poor Days:</strong> Reduce outdoor activities, keep windows closed</li>
+                <li><strong>Unhealthy Days:</strong> Avoid outdoor activities, wear masks if going out</li>
+                <li><strong>Hazardous Days:</strong> Stay indoors, use air purifiers</li>
+            </ul>
+            
+            <div class="footer">
+                <p>IoT-Based Air Quality Monitoring System | Environmental Data Analysis</p>
+                <p>This report was automatically generated by the Air Quality Monitoring Dashboard</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    

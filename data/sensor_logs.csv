@@ -1,0 +1,7 @@
+timestamp,air_quality,temperature_c,humidity_percent,smoke_ppm,co2_ppm,aqi_category,alert_status
+2026-06-11 17:15:29,99,24.9,64.6,79,549,Moderate,NORMAL
+2026-06-11 17:15:34,101,25.3,62.5,80,551,Poor,ALERT
+2026-06-11 17:15:39,98,25.9,58.5,79,548,Moderate,NORMAL
+2026-06-11 17:15:44,95,25.7,59.4,76,543,Moderate,NORMAL
+2026-06-11 17:15:49,108,25.9,60.9,86,562,Poor,ALERT
+2026-06-11 17:15:54,192,25.8,58.5,154,689,Poor,ALERT

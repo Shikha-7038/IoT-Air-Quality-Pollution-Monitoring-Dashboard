@@ -1,0 +1,19 @@
+============================================================
+AIR QUALITY MONITORING REPORT
+============================================================
+
+Report Generated: 2026-06-11 17:53:00
+Total Readings: 25
+Average Air Quality: 99.2
+Max Air Quality: 248
+Min Air Quality: 21
+Average Temperature: 26.7°C
+Average Humidity: 52.3%
+Total Alerts: 10
+
+Air Quality Distribution:
+  Good: 8 (32.0%)
+  Moderate: 7 (28.0%)
+  Poor: 7 (28.0%)
+  Unhealthy: 3 (12.0%)
+  Hazardous: 0 (0.0%)
